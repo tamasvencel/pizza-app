@@ -1,3 +1,6 @@
+# React Pizza App
+I built this by following a Jonas Schmedtmann's course.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
