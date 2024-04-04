@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
+import CELLS from "../node_modules/vanta/src/vanta.cells";
 
 const pizzaData = [
   {
@@ -48,6 +49,25 @@ const pizzaData = [
 ];
 
 function App() {
+  useEffect(() => {
+    CELLS(
+      {
+        el: "#body",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        color1: 0x275151,
+        color2: 0xa72562,
+        size: 1.8,
+        speed: 1.1,
+      },
+      []
+    );
+  });
+
   return (
     <div className="container">
       <Header />

@@ -12,13 +12,17 @@ html {
 
 body {
   font-family: "Roboto Mono", sans-serif;
-  color: #252525;
+  color: #ededed;
   font-weight: 400;
   background-color: #f7f2e9;
-  border-bottom: 1.6rem solid #edc84b;
+  border-bottom: 1.6rem solid #e4809b;
   min-height: 100vh;
   padding: 3.2rem;
   padding-bottom: 6rem;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .container {
@@ -39,7 +43,7 @@ body {
 
 .header h1 {
   /* Non-accessible color */
-  color: #edc84b;
+  color: #e4809b;
   /* color: #af8602; */
 
   text-transform: uppercase;
@@ -58,7 +62,7 @@ body {
   content: "";
   height: 3px;
   width: 4rem;
-  background-color: #edc84b;
+  background-color: #815863;
   position: absolute;
   top: calc(50% - 1px);
 }
@@ -141,7 +145,7 @@ body {
 }
 
 .pizza.sold-out {
-  color: #888;
+  color: #ab0707;
 }
 
 .pizza.sold-out img {
@@ -168,14 +172,15 @@ body {
   border: none;
   font-size: 1.4rem;
   font-weight: 500;
-  background-color: #edc84b;
+  background-color: #9b0f37;
   padding: 1.4rem 3.2rem;
   cursor: pointer;
   transition: all 0.2s;
+  border-radius: 10%;
 }
 
 .btn:hover {
-  background-color: #e9bb24;
+  background-color: #d0144a;
 }
 
 /*
